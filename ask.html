@@ -4,8 +4,93 @@
     <meta charset="UTF-8">
     <title>เว็บไซต์ของฉัน</title>
     <link rel="stylesheet" href="style.css">
+
+
+    <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .name-button {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .name-button:hover {
+      background-color: #45a049;
+    }
+    
+        body { font-family: Arial, sans-serif; background: blanchedalmond; }
+        .profile { max-width: 400px; margin: 40px auto; background: blanchedalmond; padding: 24px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+        .profile h2 { margin-top: 0; }
+        .profile dt { font-weight: bold; }
+        .profile dd { margin: 0 0 12px 0; }
+        .back-btn { 
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            font-size: 32px;
+            background: blanchedalmond;
+            padding: 8px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .back-btn2 {
+            position:fixed;
+            left: 20px;
+            bottom: 100px;
+            font-size: 32px;
+            background: blanchedalmond;
+            padding: 8px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+    
+  </style>
 </head>
 <body>
     <h2>ให้ผู้เล่นตามหาว่าใครคือคนที่ทำข้อมูลหลุด</h2>
-    <p></p>
+    <h3>ใครคือคนที่ทำข้อมูล</h3>
+    
+
+  <button class="name-button" onclick="alertName('ไอซ์')">ไอซ์</button>
+  <button class="name-button" onclick="alertName('จูน')">จูน</button>
+  <button class="name-button" onclick="alertName('มีน')">มีน</button>
+  <button class="name-button" onclick="alertName('บีม')">บีม</button>
+  <button class="name-button" onclick="alertName('เคน')">เคน</button>
+  <button class="name-button" onclick="alertName('แซน')">แซน</button>
+  <button class="name-button" onclick="alertName('เท็น')">เท็น</button>
+
+  <a href="index.html" class="back-btn2">กลับไปหน้าแรก</a>
+  <a href="real.html" class="back-btn">กลับไปดูคำสอบสวน</a>
+  
+
+  <script>
+    function alertName(name) {
+        if (name === 'เท็น') {
+            alert("เป็นคำตอบที่: ถูกต้อง ☑️\nเท็นคือคนที่ทำข้อมูลหลุด   \nขอบคุณที่ช่วยตามหาคนร้าย \n คุณจะได่รับปากกา1เท่ง");
+        } else {
+            alert("เป็นคำตอบที่: ไม่ถูกต้อง \n คุณจะได้รับลูกอม");
+        }
+    }
+    
+    
+  </script>
+
+</body>
+</html>
     
